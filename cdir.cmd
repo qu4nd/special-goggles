@@ -17,7 +17,7 @@ cd /d %*
 goto DONE
 
 :CLIP
-for /f %%i in ('Powershell.exe -executionpolicy remotesigned -File  D:\devtools\scripts\getClipboard.ps1') do set DIRNAME=%%i
+for /f %%i in ('Powershell.exe -executionpolicy remotesigned -File  C:\devtools\special-goggles\getClipboard.ps1') do set DIRNAME=%%i
 cd /d %DIRNAME%
 goto DONE
 
@@ -34,7 +34,7 @@ cd /d D:\DATA\V082172\Downloads
 goto DONE
 
 :GIT
-cd /d D:\devtools\git
+cd /d C:\devtools\special-goggles
 goto DONE
 
 :SCRIPT
@@ -42,7 +42,7 @@ cd /d D:\devtools\scripts
 goto DONE
 
 :DEVTOOLS
-cd /d D:\devtools
+cd /d C:\devtools
 goto DONE
 
 :ADB
